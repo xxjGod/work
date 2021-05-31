@@ -1,0 +1,11 @@
+#############05-24--05-28#########
+1:自定义注解
+@Documented
+@Target({ElementType.TYPE})
+@Retention(RetentionPolicy.RUNTIME)
+@Inherited 只有当ElementType.TYPE 才可在子类中获取父类的注解
+当里面有value()时，传递时可以省略value=
+2:匿名内部类初始化
+内部类
+静态内部类 new GroupChangeDTO.GroupChangeLogDTO();
+##################################
