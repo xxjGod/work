@@ -6,6 +6,7 @@
     <modules>
         <module>dubbo</module>
         <module>base</module>
+        <module>enjoy</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
