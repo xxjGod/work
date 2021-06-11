@@ -14,14 +14,23 @@ import java.util.Arrays;
  */
 public class TestBeanCopy {
 
-    public static void main(String[] args) throws InvocationTargetException, IllegalAccessException {
+    public static void main(String[] args) throws Exception {
+        test1();
+        //test2();
+
+    }
+
+
+
+    private static void test1() throws Exception{
         PersonPO personPO = new PersonPO();
         PersonDTO personDTO = new PersonDTO();
-        personDTO.setAge(12).setName("xxj").setLikes(Arrays.asList("xxj", "xxr", "xxn"));
+        personDTO.setAge(12);
+        personDTO.setName("xxj");
+        personDTO.setLikes(Arrays.asList("xxj", "xxr", "xxn"));
         BeanUtils.copyProperties(personPO, personDTO);
 
         System.out.println("final:" + personPO.getName());
-
     }
 
 
