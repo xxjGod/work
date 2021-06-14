@@ -1,4 +1,4 @@
-package voxlearning;
+package com.xxjsmile.voxlearning;
 
 import java.beans.BeanInfo;
 import java.beans.IntrospectionException;
