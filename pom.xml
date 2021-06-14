@@ -6,6 +6,7 @@
     <modules>
         <module>base</module>
         <module>enjoy</module>
+        <module>enjoy</module>
         <module>zookeeper</module>
     </modules>
     <parent>
