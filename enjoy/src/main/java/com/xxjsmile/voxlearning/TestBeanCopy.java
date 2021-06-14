@@ -3,6 +3,7 @@ package com.xxjsmile.voxlearning;
 
 import org.apache.commons.beanutils.BeanUtils;
 
+
 import java.util.Arrays;
 
 /**
@@ -14,20 +15,35 @@ import java.util.Arrays;
 public class TestBeanCopy {
 
     public static void main(String[] args) throws Exception {
-        test1();
-        //test2();
+        //Apache
+        //test1();
+        //spring
+        test2();
 
     }
 
 
-
-    private static void test1() throws Exception{
+    private static void test1() throws Exception {
+        //BeanInfo beanInfo = Introspector.getBeanInfo(icontext.getTargetClass());
         PersonPO personPO = new PersonPO();
         PersonDTO personDTO = new PersonDTO();
         personDTO.setAge(12);
         personDTO.setName("xxj");
         personDTO.setLikes(Arrays.asList("xxj", "xxr", "xxn"));
         BeanUtils.copyProperties(personPO, personDTO);
+
+        System.out.println("final:" + personPO.getName());
+    }
+
+    private static void test2() {
+
+        //this.beanInfo = new ExtendedBeanInfo(Introspector.getBeanInfo(beanClass));
+        PersonPO personPO = new PersonPO();
+        PersonDTO personDTO = new PersonDTO();
+        personDTO.setAge(12);
+        personDTO.setName("xxj");
+        personDTO.setLikes(Arrays.asList("xxj", "xxr", "xxn"));
+        org.springframework.beans.BeanUtils.copyProperties(personDTO, personPO);
 
         System.out.println("final:" + personPO.getName());
     }

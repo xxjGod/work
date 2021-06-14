@@ -19,7 +19,12 @@
             <version>1.9.4</version>
         </dependency>
 
-
+        <!-- https://mvnrepository.com/artifact/org.springframework/org.springframework.beans -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>org.springframework.beans</artifactId>
+            <version>3.1.0.RELEASE</version>
+        </dependency>
 
 
     </dependencies>
