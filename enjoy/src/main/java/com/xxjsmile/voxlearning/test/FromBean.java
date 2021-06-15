@@ -1,26 +1,27 @@
-package com.xxjsmile.voxlearning;
+package com.xxjsmile.voxlearning.test;
 
 import lombok.Getter;
 import lombok.Setter;
-import lombok.experimental.Accessors;
 
 import java.util.List;
 
 /**
  * @Description:
  * @Author 肖相杰 （xiangjie.xiao@17zuoye.com）
- * @Date 2021/6/10 16:41
+ * @Date 2021/6/15 13:31
  * All Rights Reserved
  */
 @Getter
 @Setter
-public class PersonSimplePO {
+public class FromBean {
 
     private String name;
 
-    private Integer age;
+    private int age;
 
-    private List<String> likes;
+    private String address;
 
+    private String idno;
 
+    private double money;
 }

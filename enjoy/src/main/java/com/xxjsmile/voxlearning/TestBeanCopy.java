@@ -2,8 +2,10 @@ package com.xxjsmile.voxlearning;
 
 
 import org.apache.commons.beanutils.BeanUtils;
+import org.apache.commons.beanutils.PropertyUtils;
 
 
+import java.lang.reflect.InvocationTargetException;
 import java.util.Arrays;
 
 /**
@@ -16,11 +18,24 @@ public class TestBeanCopy {
 
     public static void main(String[] args) throws Exception {
         //Apache
-        //test1();
+        test1();
         //spring
-        test2();
+        //test2();
+        //test3();
 
     }
+
+    /*private static void test3() throws IllegalAccessException, NoSuchMethodException, InvocationTargetException {
+
+        PersonPO personPO = new PersonPO();
+        PersonDTO personDTO = new PersonDTO();
+        personDTO.setAge(12);
+        personDTO.setName("18");
+        personDTO.setLikes(Arrays.asList("xxj", "xxr", "xxn"));
+        PropertyUtils.setProperty(personPO, "name", "xxj");
+
+        System.out.println("final:" + personPO.getName());
+    }*/
 
 
     private static void test1() throws Exception {
@@ -28,7 +43,7 @@ public class TestBeanCopy {
         PersonPO personPO = new PersonPO();
         PersonDTO personDTO = new PersonDTO();
         personDTO.setAge(12);
-        personDTO.setName("xxj");
+        personDTO.setName("18");
         personDTO.setLikes(Arrays.asList("xxj", "xxr", "xxn"));
         BeanUtils.copyProperties(personPO, personDTO);
 
