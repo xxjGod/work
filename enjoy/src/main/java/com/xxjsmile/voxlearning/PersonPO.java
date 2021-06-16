@@ -19,9 +19,6 @@ public class PersonPO {
 
     private String name;
 
-    private Integer age;
-
-    private List<String> likes;
 
 
 }

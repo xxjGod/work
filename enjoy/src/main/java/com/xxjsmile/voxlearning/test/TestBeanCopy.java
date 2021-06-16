@@ -15,6 +15,8 @@ public class TestBeanCopy {
     public static void copy(CopyStrategy strategy, FromBean fromBean, Integer count) {
 
         long begin = new Date().getTime();
+        //Long a = System.currentTimeMillis();
+        //System.nanoTime();
 
         ToBean toBean = null;
         for (int i = 0; i < count; i++) {

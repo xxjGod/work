@@ -21,7 +21,7 @@ public class TestBeanCopy {
         test1();
         //spring
         //test2();
-        //test3();
+
 
     }
 
@@ -29,9 +29,7 @@ public class TestBeanCopy {
 
         PersonPO personPO = new PersonPO();
         PersonDTO personDTO = new PersonDTO();
-        personDTO.setAge(12);
         personDTO.setName("18");
-        personDTO.setLikes(Arrays.asList("xxj", "xxr", "xxn"));
         PropertyUtils.setProperty(personPO, "name", "xxj");
 
         System.out.println("final:" + personPO.getName());
@@ -42,9 +40,7 @@ public class TestBeanCopy {
         //BeanInfo beanInfo = Introspector.getBeanInfo(icontext.getTargetClass());
         PersonPO personPO = new PersonPO();
         PersonDTO personDTO = new PersonDTO();
-        personDTO.setAge(12);
         personDTO.setName("18");
-        personDTO.setLikes(Arrays.asList("xxj", "xxr", "xxn"));
         BeanUtils.copyProperties(personPO, personDTO);
 
         System.out.println("final:" + personPO.getName());
@@ -55,9 +51,7 @@ public class TestBeanCopy {
         //this.beanInfo = new ExtendedBeanInfo(Introspector.getBeanInfo(beanClass));
         PersonPO personPO = new PersonPO();
         PersonDTO personDTO = new PersonDTO();
-        personDTO.setAge(12);
         personDTO.setName("xxj");
-        personDTO.setLikes(Arrays.asList("xxj", "xxr", "xxn"));
         org.springframework.beans.BeanUtils.copyProperties(personDTO, personPO);
 
         System.out.println("final:" + personPO.getName());
