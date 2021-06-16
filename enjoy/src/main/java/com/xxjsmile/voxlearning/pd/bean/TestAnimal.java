@@ -6,6 +6,7 @@ import java.beans.IntrospectionException;
 import java.beans.Introspector;
 import java.beans.PropertyDescriptor;
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
 /**
  * @Author: xiaoxiangjie
@@ -23,5 +24,12 @@ public class TestAnimal {
         for (PropertyDescriptor proDescrtptor : proDescrtptors) {
             System.out.println("属性名：" + proDescrtptor.getName() + "\t" + "write：" + proDescrtptor.getWriteMethod() + "\t" + "read：" + proDescrtptor.getReadMethod());
         }
+        PropertyDescriptor pd = new PropertyDescriptor("name", Bird.class);
+        Bird p = new Bird();
+        Method setNameMethod = pd.getWriteMethod();
+        setNameMethod.invoke(p, "黄鹂");
+        Method getNameMethod = pd.getReadMethod();
+        System.out.println(getNameMethod.invoke(p, null));
+
     }
 }
