@@ -12,7 +12,7 @@ public class TestBeanCopy {
 
 
 
-    public static void copy(CopyStrategy strategy, FromBean fromBean, Integer count) {
+    public static long copy(CopyStrategy strategy, FromBean fromBean, Integer count) {
 
         long begin = new Date().getTime();
         //Long a = System.currentTimeMillis();
@@ -23,8 +23,8 @@ public class TestBeanCopy {
             toBean = strategy.copy(fromBean);
         }
         long end = new Date().getTime();
-
-        System.out.println(strategy.getName()+"耗时ms" + (end - begin));
+        long total = (end - begin);
+        return total;
 
     }
 

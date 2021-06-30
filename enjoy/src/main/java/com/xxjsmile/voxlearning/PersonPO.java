@@ -1,5 +1,6 @@
 package com.xxjsmile.voxlearning;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
@@ -15,6 +16,7 @@ import java.util.List;
 @Getter
 @Setter
 @Accessors(chain = true)
+//@Builder
 public class PersonPO {
 
     private String name;
