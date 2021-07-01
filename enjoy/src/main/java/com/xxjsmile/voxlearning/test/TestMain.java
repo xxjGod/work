@@ -25,7 +25,7 @@ public class TestMain {
         Long cglibCopy = 0L;
         //Long setCopy = 0L;
         //Long reflectCopy = 0L;
-        int count = 100_0000;
+        int count = 10_0000;
         for (int i = 0; i < count; i++) {
             springCopy += TestBeanCopy.copy(new SpringCopy(), fromBean, 1);
             apacheBeanCopy += TestBeanCopy.copy(new ApacheBeanCopy(), fromBean, 1);

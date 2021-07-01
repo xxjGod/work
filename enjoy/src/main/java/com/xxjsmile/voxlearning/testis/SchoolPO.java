@@ -1,18 +1,17 @@
-package com.xxjsmile.voxlearning.deepcopy;
+package com.xxjsmile.voxlearning.testis;
 
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
 
 /**
  * @Description:
  * @Author 肖相杰 （xiangjie.xiao@17zuoye.com）
- * @Date 2021/6/30 10:57
+ * @Date 2021/6/30 18:30
  * All Rights Reserved
  */
 @Getter
 @Setter
+public class SchoolPO {
 
-public class BookPO {
-    private String name;
+    private boolean age;
 }

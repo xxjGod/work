@@ -5,6 +5,8 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.util.List;
+
 /**
  * @Description:
  * @Author 肖相杰 （xiangjie.xiao@17zuoye.com）
@@ -13,9 +15,10 @@ import lombok.ToString;
  */
 @Getter
 @Setter
-@ToString
+
 public class StudentPO  {
     private String name;
 
-    private BookPO bookPO;
+    private List<BookPO> bookPO;
+
 }

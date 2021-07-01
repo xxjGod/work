@@ -5,6 +5,9 @@ import org.apache.commons.beanutils.PropertyUtils;
 import org.springframework.cglib.beans.BeanCopier;
 
 import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * @Description:
@@ -17,10 +20,13 @@ public class TestStudent {
     public static void main(String[] args) throws InvocationTargetException, IllegalAccessException, NoSuchMethodException {
         StudentDTO studentDTO = new StudentDTO();
         studentDTO.setName("xxj");
-        BookDTO bookDTO = new BookDTO();
+        BookPO bookDTO = new BookPO();
         bookDTO.setName("韭菜的自我修养");
-        studentDTO.setBookDTO(bookDTO);
-        System.out.println("first:" + studentDTO);
+
+        List<BookPO> bookPOS = new ArrayList<>();
+        bookPOS.add(bookDTO);
+        studentDTO.setBookPO(bookPOS);
+        System.out.println("first:" + bookPOS);
 
         StudentPO studentPO = new StudentPO();
 
@@ -30,6 +36,7 @@ public class TestStudent {
 
 //        BeanCopier beanCopier = BeanCopier.create(studentDTO.getClass(),studentPO.getClass(),false);
 //        beanCopier.copy(studentDTO,studentPO,null);
+        //System.out.println("final:" + bookDTO);
         System.out.println("final:" + studentPO.getBookPO());
 
 

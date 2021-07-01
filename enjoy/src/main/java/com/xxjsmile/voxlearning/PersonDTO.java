@@ -15,8 +15,8 @@ import java.util.List;
  */
 @Getter
 @Setter
-@Accessors(chain = true)
-//@Builder
+//@Accessors(chain = true)
+@Builder
 public class PersonDTO {
 
     public String name;
