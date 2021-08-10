@@ -20,7 +20,7 @@ public class StudentDTO  {
 
     private String name;
 
-    private List<BookPO> bookPO;
+    private List<BookDTO> bookPO;
 
 
 

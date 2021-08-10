@@ -20,13 +20,13 @@ public class TestStudent {
     public static void main(String[] args) throws InvocationTargetException, IllegalAccessException, NoSuchMethodException {
         StudentDTO studentDTO = new StudentDTO();
         studentDTO.setName("xxj");
-        BookPO bookDTO = new BookPO();
+        BookDTO bookDTO = new BookDTO();
         bookDTO.setName("韭菜的自我修养");
 
-        List<BookPO> bookPOS = new ArrayList<>();
-        bookPOS.add(bookDTO);
-        studentDTO.setBookPO(bookPOS);
-        System.out.println("first:" + bookPOS);
+        List<BookDTO> bookDTOS = new ArrayList<>();
+        bookDTOS.add(bookDTO);
+        studentDTO.setBookPO(bookDTOS);
+        System.out.println("first:" + bookDTOS);
 
         StudentPO studentPO = new StudentPO();
 

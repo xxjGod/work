@@ -25,6 +25,14 @@
             <artifactId>org.springframework.beans</artifactId>
             <version>3.1.0.RELEASE</version>
         </dependency>-->
+        <!-- https://mvnrepository.com/artifact/net.sf.json-lib/json-lib -->
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.75</version>
+        </dependency>
+
 
 
     </dependencies>

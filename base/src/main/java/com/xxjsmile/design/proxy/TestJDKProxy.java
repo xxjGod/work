@@ -1,4 +1,4 @@
-package com.xxjsmile.proxy;
+package com.xxjsmile.design.proxy;
 
 import com.xxjsmile.bean.Animal;
 import com.xxjsmile.bean.Bird;
