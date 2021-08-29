@@ -9,7 +9,15 @@ package com.xxjsmile.base.overridetest;
 public class B extends A{
 
     @Override
-    public Integer get(String name) {
+    public Integer get(String name) throws RuntimeException{
         return 7;
+    }
+
+    private Integer get(Integer age){
+        return 2;
+    }
+
+    private Object get(Object age){
+        return 2;
     }
 }

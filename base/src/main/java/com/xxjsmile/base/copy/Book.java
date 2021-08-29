@@ -1,16 +1,17 @@
-package com.xxjsmile.voxlearning.deepcopy;
+package com.xxjsmile.base.copy;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.experimental.Accessors;
 
 /**
  * @Author: xiaoxiangjie
  * @Description:
- * @Date: 2021/6/30
+ * @Date: 2021/8/1
  */
 @Getter
 @Setter
-public class StudentDTO {
+@Accessors(chain = true)
+public class Book {
     private String name;
-    private Book book;
 }
