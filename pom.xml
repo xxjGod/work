@@ -9,6 +9,7 @@
         <module>enjoy</module>
         <module>zookeeper</module>
         <module>core</module>
+        <module>architect</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
