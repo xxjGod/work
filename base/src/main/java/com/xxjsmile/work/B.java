@@ -6,5 +6,5 @@ package com.xxjsmile.work;
  * @Date 2021/7/27 16:30
  * All Rights Reserved
  */
-public class B  implements Intefacea{
-}
+//public class B  implements Intefacea{
+//}
