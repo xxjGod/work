@@ -11,9 +11,24 @@ public class FirstBadVersion {
     }
 
     public static int firstBadVersion(int n) {
+        int begin = 1;
+        int end = n;
 
-        return 1;
-
+        while (begin < end) {
+            int mid = begin + (end - begin) / 2;
+            if (isBadVersion(mid)) {
+                end = mid;
+            } else {
+                begin = mid + 1;
+            }
+        }
+        return end;
     }
+
+    public static boolean isBadVersion(int version) {
+
+        return false;
+    }
+
 
 }
