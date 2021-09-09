@@ -7,4 +7,8 @@ package com.xxjsmile.work;
  * All Rights Reserved
  */
 public class B  implements Intefacea{
+    @Override
+    public void eat() {
+
+    }
 }
