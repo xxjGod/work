@@ -10,7 +10,6 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-public class StudentDTO {
+public class Book {
     private String name;
-    private Book book;
 }

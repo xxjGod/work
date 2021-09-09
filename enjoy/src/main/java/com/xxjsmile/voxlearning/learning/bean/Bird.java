@@ -10,6 +10,8 @@ import lombok.ToString;
 @ToString
 public class Bird extends Animal {
 
+    private Integer id;
+
     private String name;
 
     public Integer age;
@@ -28,5 +30,10 @@ public class Bird extends Animal {
 
     public void setAge(Integer age) {
         this.age = age;
+    }
+
+
+    public void play(){
+        System.out.println("i can fly");
     }
 }
