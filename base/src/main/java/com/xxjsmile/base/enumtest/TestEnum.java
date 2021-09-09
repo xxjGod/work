@@ -22,6 +22,13 @@ public class TestEnum {
 //
 //        System.out.println(day.compareTo(day2));
 //        System.out.println(day instanceof Serializable);
+        String day = "MONDAY";
+        Day day1 = Day.valueOf(day);
+        String name = day1.name();
+        //Day.values()
+        System.out.println(name);
+        System.out.println(day1);
+        int[] m = new int[3];
     }
 }
 

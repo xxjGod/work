@@ -6,10 +6,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 /**
@@ -30,7 +27,7 @@ public class Test123 {
         System.out.println(name);*/
 
 
-        File file = new File("123");
+        /*File file = new File("123");
 
         try {
             FileInputStream fileInputStream = new FileInputStream(file);
@@ -38,7 +35,10 @@ public class Test123 {
             e.printStackTrace();
         } finally {
 
-        }
+        }*/
+        Map map = new HashMap();
+        map.put("xxj",12);
+        System.out.println(map.get("123").equals(123));
 
 
     }
