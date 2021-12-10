@@ -15,7 +15,23 @@ public class Testqq {
     private static SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
 
     public static void main(String[] args) {
+        //test1();
+        test2();
 
+
+    }
+
+    private static void test2() {
+        /*new ArrayList() {{
+            add(vipActivityOperRecordEntityKey);
+            add(vipLearnRecordEntityKey);
+            add(vipActivityPropRecordEntityKey);
+            add(userActivatedProductEntityKey);
+        }};*/
+        System.out.println(0.01 % 2);
+    }
+
+    private static void test1() {
         List<String> datas = Arrays.asList("2021-07-03", "2021-07-04"
                 , "2021-07-05", "2021-07-06", "2021-07-07"
                 , "2021-07-08", "2021-07-09", "2021-07-10", "2021-07-11", "2021-07-12", "2021-07-13", "2021-07-14", "2021-07-15",
@@ -35,7 +51,6 @@ public class Testqq {
             return null;
         }).collect(Collectors.toList());
         System.out.println(maxContinuityNum(dateList));
-
     }
 
     private static Integer maxContinuityNum(List<Date> dates) {
