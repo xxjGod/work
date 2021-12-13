@@ -5,6 +5,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>2021</module>
+        <module>2022</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
