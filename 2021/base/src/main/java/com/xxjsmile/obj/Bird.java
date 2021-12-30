@@ -13,7 +13,21 @@ import lombok.Setter;
 @Setter
 public class Bird {
 
+
+    static {
+        System.out.println("1："+Bird.class.getClassLoader());
+    }
+
     private String name;
+
+
+    public static void invokeMain() {
+
+        System.out.println("2："+Thread.currentThread().getContextClassLoader() );
+
+    }
+
+
 
     private Integer age;
 
