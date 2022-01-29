@@ -22,4 +22,12 @@ public class TestStatic implements Serializable {
     public static void test2() {
         String va = "xxjsmile test2";
     }
+
+    public static void main(String[] args) {
+        TestStatic testStatic = new TestStatic();
+        testStatic.test1();
+        //testStatic.
+        testStatic.test2();
+        TestStatic.test2();
+    }
 }
