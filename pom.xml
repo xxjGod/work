@@ -7,6 +7,7 @@
         <module>2021</module>
         <module>2022</module>
         <module>2022/job</module>
+        <module>arithmetic</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
