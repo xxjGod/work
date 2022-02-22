@@ -44,7 +44,7 @@ public class TestThreadLocal {
                     Field referenceField = entryClass.getSuperclass().getSuperclass().getDeclaredField("referent");
                     valueField.setAccessible(true);
                     referenceField.setAccessible(true);
-                    System.out.println(String.format("弱引用key:%s,值:%s", referenceField.get(o), valueField.get(o)));
+                    //System.out.println(String.format("弱引用key:%s,值:%s", referenceField.get(o), valueField.get(o)));
                 }
             }
         } catch (Exception e) {

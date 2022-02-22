@@ -1,5 +1,6 @@
 package com.xxj;
 
+import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.List;
 
@@ -11,15 +12,10 @@ import java.util.List;
 public class Test123 {
 
     public static void main(String[] args) {
-        List<Integer> integers = Arrays.asList(1,25,12,47,13,18,23);
-        integers.parallelStream().forEach(t->{ if(t==12){
-                    return;
-                }
-                    System.out.println("奇数："+t);
-
-        }
-
-                );
+        BigDecimal bigDecimal1 = new BigDecimal("365");
+        BigDecimal bigDecimal2 = new BigDecimal("365");
+        System.out.println(bigDecimal1.equals(bigDecimal2));
+        System.out.println(bigDecimal1.compareTo(bigDecimal2));
 
     }
 }

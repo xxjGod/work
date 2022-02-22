@@ -1,4 +1,4 @@
-package com.xxj.jvm;
+package com.xxj.myjvm;
 
 import java.lang.ref.PhantomReference;
 import java.lang.ref.ReferenceQueue;

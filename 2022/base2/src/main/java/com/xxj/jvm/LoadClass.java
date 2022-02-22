@@ -1,4 +1,4 @@
-package com.xxj.jvm;
+package com.xxj.myjvm;
 
 
 import com.sun.xml.internal.ws.org.objectweb.asm.ClassWriter;
