@@ -1,5 +1,6 @@
 package com.xxj;
 
+import java.io.File;
 import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.List;
@@ -26,12 +27,14 @@ public class Test123 {
         }else {
             System.out.println(t);
         }});*/
-        List<String> str = Arrays.asList("12355","12");
-    str.stream().filter(e -> e.length() > 3)
-                .peek(e -> {
-                    e = e + "a";
-                });
-        System.out.println(str);
+//        List<String> str = Arrays.asList("12355", "12");
+//        str.stream().filter(e -> e.length() > 3)
+//                .peek(e -> {
+//                    e = e + "a";
+//                });
+//        System.out.println(str);
+
+        System.out.println(File.separator);
 
     }
 }

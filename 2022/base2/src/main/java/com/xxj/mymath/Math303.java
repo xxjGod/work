@@ -1,7 +1,7 @@
 package com.xxj.mymath;
 
 /**
- * @Description:
+ * @Description: 集合中坐标和
  * @Author 肖相杰 （xiangjie.xiao@17zuoye.com）
  * @Date 2022/3/2 16:29
  * All Rights Reserved
