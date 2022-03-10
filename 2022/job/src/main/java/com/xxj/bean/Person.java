@@ -7,6 +7,12 @@ package com.xxj.bean;
  * All Rights Reserved
  */
 public class Person {
+
+    public  Person(){}
+
+    public Person(String name){
+        this.name = name;
+    }
     private String name;
 
     private Integer age;
@@ -25,5 +31,13 @@ public class Person {
 
     public void setAge(Integer age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
     }
 }
