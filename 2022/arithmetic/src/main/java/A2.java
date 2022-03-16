@@ -70,7 +70,7 @@ public class A2 {
 
 class ListNode {
     int val;
-    ListNode next;
+    public ListNode next;
 
     ListNode() {
     }

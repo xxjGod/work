@@ -12,6 +12,9 @@
     </parent>
     <modules>
         <module>base2</module>
+        <module>arithmetic</module>
+        <module>job</module>
+
     </modules>
     <packaging>pom</packaging>
     <groupId>com.xxjsmile</groupId>
